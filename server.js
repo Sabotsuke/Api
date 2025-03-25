@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 3535;
+const PORT = process.env.PORT || 3535;
 
 // ✅ CORS middleware aktif et
 app.use(cors());  
